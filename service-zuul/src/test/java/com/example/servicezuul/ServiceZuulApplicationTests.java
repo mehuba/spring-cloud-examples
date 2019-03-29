@@ -1,6 +1,5 @@
-package com.example.eurekaclient;
+package com.example.servicezuul;
 
-import com.example.serviceribbon.Config;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,8 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@ContextConfiguration(classes = {Config.class})
-public class ServiceRibbonApplicationTests {
+public class ServiceZuulApplicationTests {
 
     @Test
     public void contextLoads() {
