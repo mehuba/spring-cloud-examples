@@ -1,7 +1,8 @@
-
 server:
   port: 8761
-
+spring:
+  application:
+    name: eureka-server
 eureka:
   instance:
     hostname: localhost
@@ -11,6 +12,3 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-spring:
-  application:
-    name: eurka-server

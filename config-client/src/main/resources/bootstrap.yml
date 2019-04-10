@@ -1,4 +1,9 @@
-
+server:
+  port: 8766
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 spring:
   application:
     name: config-client
@@ -6,6 +11,6 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
-server:
-  port: 8881
+      discovery:
+        enabled: true
+        serviceId: config-server

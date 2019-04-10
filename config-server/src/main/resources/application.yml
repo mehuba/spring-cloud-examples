@@ -1,7 +1,10 @@
-
 server:
   port: 8888
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 spring:
   application:
     name: config-server
@@ -9,11 +12,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
+          uri: https://github.com/mehuba/spring-cloud-config
           searchPaths: respo
           username:
           password:
       label: master
-
-
-
